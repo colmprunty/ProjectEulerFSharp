@@ -2,16 +2,20 @@
 
 module Problem2 =
     let mutable x = 1
-    let mutable y = 2    
+    let mutable y = 2
+    let mutable n = 0
+    let mutable sum = 0
 
     let getNextFibbonaci() =
-        let n = x + y
+        n <- x + y
         x <- y
-        y <- n
-        System.Console.WriteLine(y)
+        y <- n     
 
     let doTheThing() = 
-        while x < 4000000
-            do getNextFibbonaci()
+        while x < 4000000 do
+            getNextFibbonaci() 
+            if(n % 2 = 0)
+                then sum <- sum + n
 
     doTheThing()
+    System.Console.WriteLine(sum)
