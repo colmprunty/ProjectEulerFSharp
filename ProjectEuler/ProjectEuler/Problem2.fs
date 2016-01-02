@@ -6,14 +6,14 @@ module Problem2 =
     let mutable n = 0
     let mutable sum = 0
 
-    let getNextFibbonaci() =
+    let getNextFibonacci() =
         n <- x + y
         x <- y
         y <- n     
 
     let doTheThing() = 
         while x < 4000000 do
-            getNextFibbonaci() 
+            getNextFibonacci() 
             if(n % 2 = 0)
                 then sum <- sum + n
 
