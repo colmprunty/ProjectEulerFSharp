@@ -1,9 +1,14 @@
-﻿let mutable sum = 0
+﻿let problem1 = 
+    [1..999]
+    |> Seq.filter(fun x -> x % 3 = 0 || x % 5 = 0)
+    |> Seq.fold(+) 0
 
-let sumFunctions() =
-    for i in 1 .. 999 do
-        if i%3 = 0 || i%5 = 0 then
-            sum <- sum + i
+printfn "Problem 1 = %d" problem1
 
-sumFunctions()
-System.Console.WriteLine(sum)
+
+// this doesn't work
+//let problem1b =
+//    [0..3..999] @ [0..5..999]
+//    |> Seq.fold(+) 0
+//
+//printfn "Problem 1 = %d" problem1b
