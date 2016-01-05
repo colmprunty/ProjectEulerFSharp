@@ -47,9 +47,10 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problem2.fs" />
+    <Compile Include="Problem3.fs" />
     <None Include="App.config" />
     <Compile Include="Problem1.fs" />
+    <Compile Include="Problem2.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
